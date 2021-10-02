@@ -1,0 +1,31 @@
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gradientText{
+	background: #08a;
+	background: linear-gradient(90deg, #08a, #a0a);
+	background-clip: text;
+	color: transparent;
+	cursor: default;
+}
+
+.underLine{
+	background: #08a;
+	background: linear-gradient(90deg, #08a, #a0a) left 80% no-repeat;
+	background-size: 0% 3px;
+	transition: background-size .3s linear;
+
+	&.rightSide{
+		background-position: right 80%;
+	}
+
+	&:hover{
+		background-size: 100% 3px;
+	}
+}
+
+
+

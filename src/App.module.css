@@ -4,5 +4,26 @@
   color: #ddd;
   background: #233b;
   padding: 1rem;
+  width: 80vw;
+  height: 85vh;
 
+  display: grid;
+  grid-template-rows: 5vw 1fr;
+  grid-template-areas:
+  "header header"
+  "fav recent"
+  ;
+
+}
+
+.header{
+	grid-area: header;
+}
+
+.fav{
+	grid-area: fav;
+}
+
+.recent{
+	grid-area: recent;
 }

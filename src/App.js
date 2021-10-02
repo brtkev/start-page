@@ -1,8 +1,14 @@
 import styles from './App.module.css'
+import Header from './components/Header.js'
+import Favorites from './components/Favorites.js'
 
 const App = () => {
 	return (
-		<h1 className={styles.container} >Hello World!</h1>
+		<div className={styles.container}>
+			<Header className={styles.header}></Header>
+			<Favorites className={styles.fav}></Favorites>
+			<div className={styles.recent}>recent</div>
+		</div>
 	);
 }
 
