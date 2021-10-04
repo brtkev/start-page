@@ -1,0 +1,32 @@
+
+
+.container{
+	position: absolute;
+	width: 5vw;
+	height: 100%;
+	background-color: #011;
+}
+
+.ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+}
+
+.li{
+	list-style: none;
+	border: 1px solid #022;
+	width: 100%;
+	height: 10%;
+	color: #ddd;
+	position: relative;
+
+	& img{
+		text-align: justify;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}

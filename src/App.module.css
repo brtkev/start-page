@@ -1,29 +1,7 @@
-
 .container{
-  border: 1px solid #222;
-  color: #ddd;
-  background: #233b;
-  padding: 1rem;
-  width: 80vw;
-  height: 85vh;
-
+  background: #bbb;
+  background-image: url('../public/background.png');
   display: grid;
-  grid-template-rows: 5vw 1fr;
-  grid-template-areas:
-  "header header"
-  "fav recent"
-  ;
-
-}
-
-.header{
-	grid-area: header;
-}
-
-.fav{
-	grid-area: fav;
-}
-
-.recent{
-	grid-area: recent;
+  place-content: center;
+  min-height: 100vh;
 }

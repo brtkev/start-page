@@ -1,13 +1,18 @@
 import styles from './App.module.css'
-import Header from './components/Header.js'
-import Favorites from './components/Favorites.js'
+import Home from './Home'
+import Navegation from './components/Navegation.js'
 
 const App = () => {
 	return (
 		<div className={styles.container}>
+			<Navegation  />
+			<Home />
+			{/* 
 			<Header className={styles.header}></Header>
+			<Navegation  />
 			<Favorites className={styles.fav}></Favorites>
 			<div className={styles.recent}>recent</div>
+			 */}
 		</div>
 	);
 }
