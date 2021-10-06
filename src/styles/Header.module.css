@@ -6,7 +6,7 @@
 
 .gradientText{
 	background: #08a;
-	background: linear-gradient(90deg, #08a, #a0a);
+	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
 	cursor: default;

@@ -1,3 +1,20 @@
 .container{
-	outline: 1px solid;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.title{
+
+	color: var(--lightGreen);
+	cursor: default;
+	width: min-content;
+
+	font-size: calc(1em + 1vw);
+
+
+}
+
+.li{
+	list-style: none;
 }

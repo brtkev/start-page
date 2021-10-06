@@ -5,6 +5,14 @@
 	padding: 0;	
 }
 
+html{
+	--gradientCelest: #08a;
+	--gradientViolet: #a0a;
+	--gradient: linear-gradient(90deg, var(--gradientCelest), var(--gradientViolet));
+	--lightGreen :  rgb(120, 248, 205);
+	--blue : rgb(1,1,54);
+}
+
 body{
   min-height: 100vh;
   margin: 0;
