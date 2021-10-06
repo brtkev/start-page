@@ -3,11 +3,36 @@ import Header from './components/Header.js'
 import Favorites from './components/Favorites.js'
 
 const Home = () => {
+
 	return (
 		<div className={styles.container}>
-			<Header className={styles.header}></Header>			
-			<Favorites className={styles.fav}></Favorites>
-			<div className={styles.recent}>recent</div>
+			<ul className={styles.ul} >
+				<li className={styles.li} >
+					<image className={styles.img} src="../public/twitter-icon.png" alt="logo"></image>
+					<p className={styles.text} >logo name</p>
+				</li>
+				<li className={styles.li} >
+					<image className={styles.img} src="../public/twitter-icon.png" alt="logo"></image>
+					<p className={styles.text} >logo name</p>
+				</li>
+				<li className={styles.li} >
+					<image className={styles.img} src="../public/twitter-icon.png" alt="logo"></image>
+					<p className={styles.text} >logo name</p>
+				</li>
+				<li className={styles.li} >
+					<image className={styles.img} src="../public/twitter-icon.png" alt="logo"></image>
+					<p className={styles.text} >logo name</p>
+				</li>
+				<li className={styles.li} >
+					<image className={styles.img} src="../public/twitter-icon.png" alt="logo"></image>
+					<p className={styles.text} >logo name</p>
+				</li>
+				<li className={styles.li} >
+					<image className={styles.img} src="../public/twitter-icon.png" alt="logo"></image>
+					<p className={styles.text} >logo name</p>
+				</li>
+				
+			</ul>
 		</div>
 	);
 }
