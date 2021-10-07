@@ -31,10 +31,7 @@
 
   & .img{
     grid-area: image;
-    background: #ddd;
-    background: url('../../public/twitter-icon.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    width: 100%;
     transition: transform .3s linear;
 
     &:hover{

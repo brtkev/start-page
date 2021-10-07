@@ -1,7 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const CopyPlugin = require("copy-webpack-plugin");
 
-const jsRules = {
+const jsRule = {
     test: /\.js$/,
     loader: 'babel-loader',
     options: { 
@@ -11,12 +12,17 @@ const jsRules = {
     }
   }
 
-const cssRules = {
+const cssRule = {
     test: /\.css$/,
     use: ['style-loader', 'css-loader','postcss-loader']
   }
 
-const rules = [jsRules, cssRules]
+const assetRule = {
+  test: /\.png$/,
+  type: 'asset'      
+}
+
+const rules = [jsRule, cssRule, assetRule]
 module.exports = (env, argv) => {
   const {mode} = argv;
   const isProduction = mode === 'production';
@@ -24,10 +30,16 @@ module.exports = (env, argv) => {
     // entry: './src/index.js',
     output : {
       filename : isProduction ? '[name].[contenthash].js' : 'main.js',
-      path: path.resolve(__dirname, 'build')
+      path: path.resolve(__dirname, 'build'),
+      clean: true,
     },
     plugins: [
-      new HtmlWebpackPlugin({template: 'src/index.html'})
+      new HtmlWebpackPlugin({template: 'src/index.html'}),
+      new CopyPlugin({
+        patterns: [
+          { from: "src/public/", to: "./public/" },
+        ],
+      }),
     ],
     module : {
       rules
@@ -35,7 +47,10 @@ module.exports = (env, argv) => {
     devServer: {
       open: true,
       port: 3000,
-      compress: true
+      compress: true,
+      devMiddleware: {
+        writeToDisk: true,
+      },
     }
   }
 }
