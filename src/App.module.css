@@ -1,6 +1,6 @@
 .container{
   background: #bbb;
-  background-image: url('./public/background.png');
+  background-image: url('../public/background.png');
   display: grid;
   place-content: center;
   min-height: 100vh;

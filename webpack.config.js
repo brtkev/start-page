@@ -35,11 +35,11 @@ module.exports = (env, argv) => {
     },
     plugins: [
       new HtmlWebpackPlugin({template: 'src/index.html'}),
-      new CopyPlugin({
-        patterns: [
-          { from: "src/public/", to: "./public/" },
-        ],
-      }),
+      // new CopyPlugin({
+      //   patterns: [
+      //     { from: "src/public/", to: "./public/" },
+      //   ],
+      // }),
     ],
     module : {
       rules
@@ -48,9 +48,9 @@ module.exports = (env, argv) => {
       open: true,
       port: 3000,
       compress: true,
-      devMiddleware: {
-        writeToDisk: true,
-      },
+      // devMiddleware: {
+      //   writeToDisk: true,
+      // },
     }
   }
 }
