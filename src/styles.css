@@ -9,7 +9,7 @@ html{
 	--gradientCelest: #08a;
 	--gradientViolet: #a0a;
 	--gradient: linear-gradient(90deg, var(--gradientCelest), var(--gradientViolet));
-	--lightGreen :  rgb(120, 248, 205);
+	--lightGreen :  #78f8cd;
 	--blue : rgb(1,1,54);
 	--pink : rgb(255, 107, 118);
 	--violet : rgb(92, 50, 104);

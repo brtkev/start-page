@@ -1,15 +1,26 @@
 .container{
   border: 1px solid #222;
-  color: #ddd;
-  background: #233b;
-  padding: 1rem;
+  background: #222;
   width: 80vw;
   height: 85vh;
+
+  display: grid;
+  grid-template-areas: "searchBar" "apps" ;
+  grid-template-rows: 5vw 1fr;
+  grid-auto-columns: 100%;
+  justify-items: center;
+
+}
+
+.searchBar{
+  /* outline: 1px solid red; */
+  grid-area: searchBar;
+  width: 50%;
 }
 
 .ul{
   width: 100%;
-  height: 100%;
+  grid-area: apps;
 
   display: grid;
 
@@ -33,15 +44,14 @@
   grid-template-areas: 
   "image"
   "text";
-  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
   grid-template-rows: 70% min-content;
   place-items: center;
-
   &:hover > .text{
     transform: translateY(15%);
     color: var(--lightGreen);
   }
-  &:hover > .img{
+  &:hover > .imgBox{
       transform: scale(1.1);
       filter: none;
   } 
@@ -49,11 +59,18 @@
     transform: scale( .95);
   }
 
-  & .img{
-    grid-area: image;
-    filter: brightness(20%);
+  & .imgBox{
+    width: 100%;
     height: 100%;
+    grid-area: image;
+    filter: brightness(15%);
     transition: transform .3s linear, filter .3s linear;
+    & .img{
+      /* display: none; */
+      height: 100%;
+      width: 100%;
+      object-fit: scale-down;
+    }
   }
 
   & .text{
@@ -67,4 +84,7 @@
 
 
 }
+
+
+
 
