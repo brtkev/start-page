@@ -4,6 +4,7 @@ custom staring page for my browsing
 you can see it [here](https://brtkev.github.io/start-page/)
 
 ## todo:
+- fix ico bundling
 - responsiveness
 - change search engine
 - add database
