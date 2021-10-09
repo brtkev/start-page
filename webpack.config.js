@@ -34,7 +34,7 @@ module.exports = (env, argv) => {
       clean: true,
     },
     plugins: [
-      new HtmlWebpackPlugin({template: 'src/index.html'}),
+      new HtmlWebpackPlugin({template: 'public/index.html'}),
       // new CopyPlugin({
       //   patterns: [
       //     { from: "src/public/", to: "./public/" },
