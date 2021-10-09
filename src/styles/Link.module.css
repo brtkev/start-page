@@ -1,7 +1,0 @@
-.link{
-	color: var(--lightGreen);
-	font-size: calc(.7rem + .5vw);
-	&:visited{
-		color: var(--lightGreen);
-	}
-}

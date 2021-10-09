@@ -2,7 +2,7 @@ import styles from './styles/Home.module.css'
 import Header from './components/Header'
 import Favorites from './components/Favorites'
 import SearchBar from './components/SearchBar'
-import { githubLogo, gmailLogo, youtubeLogo, linkedinLogo } from './images.js'
+import { githubLogo, gmailLogo, youtubeLogo, linkedinLogo } from './components/images.js'
 
 const HomeAppButton = ({href, image, alt, children}) => {
 
@@ -28,7 +28,8 @@ const Home = () => {
 				<HomeAppButton href="https://mail.google.com/mail/u/0/" image={gmailLogo} alt="gmail logo" >gmail</HomeAppButton>
 				<HomeAppButton href="https://www.youtube.com" image={youtubeLogo} alt="youtube logo" >youtube</HomeAppButton>	
 				<HomeAppButton href="https://www.linkedin.com/feed/" image={linkedinLogo} alt="linkedin logo" >linkedin</HomeAppButton>
-				<HomeAppButton href="https://github.com" image={githubLogo} alt="github logo" >github</HomeAppButton>				</ul>
+				<HomeAppButton href="https://github.com" image={githubLogo} alt="github logo" >github</HomeAppButton>
+			</ul>
 		</div>
 	);
 }
