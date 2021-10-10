@@ -50,3 +50,9 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .li:not(.li:nth-child(3)){
+    display: none;
+  }
+}

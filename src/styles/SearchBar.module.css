@@ -40,3 +40,19 @@
 
   
 }
+
+@media (max-width: 768px) {
+  .container{
+      & .input{
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .container{
+      & .input{
+      font-size: 12px;
+    }
+  }
+}
