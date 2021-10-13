@@ -15,6 +15,8 @@ webpack in general, a little bit of babel, and a lot of postcss, which was most 
 I did my [react template](https://github.com/brtkev/react-light-template) in the process so that's why I learned those things
 I learned to change to a new page using window.locate and to change the favico with javascript
 
+ok, so I decided to add back-end to it but, I know close to nothing about back-end so,  learning the ways of express and moongose/mongodb
+
 ## ideas/thoughts
 
 to have a main category on the header ✅
