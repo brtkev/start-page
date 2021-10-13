@@ -1,0 +1,29 @@
+.container{
+  background: #111;
+  color: #eee;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-areas: 
+  "head"
+  "body"
+  "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 10vh 60vh 30vh;
+
+}
+
+.head{
+	grid-area: head;
+}
+
+.body{
+	grid-area: body;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer{
+	grid-area: footer;
+}

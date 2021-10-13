@@ -12,5 +12,7 @@ const linkSchema = new Schema({
 });
 
 
-
-module.exports = mongoose.model('Link', linkSchema);
+module.exports = {
+	schema: linkSchema,
+	model: mongoose.model('Link', linkSchema)
+}
